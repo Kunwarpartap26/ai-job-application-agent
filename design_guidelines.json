@@ -1,0 +1,143 @@
+{
+  "identity": {
+    "name": "AutoApply AI",
+    "persona": "E1: The Anti-AI Designer",
+    "archetype": "Swiss Organic (Archetype 4 + 1)",
+    "vibe": "Zen Productivity, Precision, Human-Centric Automation"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Outfit, sans-serif",
+      "body": "Plus Jakarta Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "weights": {
+      "headings": "600",
+      "body_regular": "400",
+      "body_medium": "500",
+      "body_bold": "700"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl tracking-tight leading-[1.1]",
+      "h2": "text-4xl md:text-5xl tracking-tight leading-tight",
+      "h3": "text-2xl md:text-3xl tracking-normal",
+      "body_lg": "text-lg md:text-xl leading-relaxed",
+      "body_base": "text-base leading-relaxed",
+      "caption": "text-sm tracking-wide uppercase text-muted-foreground"
+    },
+    "instructions": "Import 'Outfit' and 'Plus Jakarta Sans' from Google Fonts. Use Outfit for all headings (h1-h3) and Plus Jakarta Sans for body text. Use JetBrains Mono for any data values or code snippets."
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "International Orange",
+        "hex": "#EA580C",
+        "tailwind": "orange-600",
+        "usage": "Primary CTAs, Active States, Highlights"
+      },
+      "background": {
+        "name": "Warm Paper",
+        "hex": "#FAFAF9",
+        "tailwind": "stone-50",
+        "usage": "Main App Background"
+      },
+      "surface": {
+        "name": "White Clay",
+        "hex": "#FFFFFF",
+        "tailwind": "white",
+        "usage": "Cards, Modals, Sidebar"
+      },
+      "text": {
+        "primary": "#1C1917",
+        "secondary": "#57534E",
+        "tailwind_primary": "stone-900",
+        "tailwind_secondary": "stone-600"
+      },
+      "accent": {
+        "success": "#059669",
+        "warning": "#D97706",
+        "error": "#DC2626",
+        "info": "#2563EB"
+      }
+    },
+    "theme_strategy": "Light Mode First. Dark mode should use deep charcoal (#0C0A09) instead of pure black.",
+    "gradients": "NO gradients for backgrounds. Use solid colors. Subtle gradients allowed only on text or borders for 'active' states."
+  },
+  "layout": {
+    "grid_system": {
+      "dashboard": "Bento Grid (Mode B): grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4",
+      "marketing": "Tetris Grid (Mode A): grid-cols-1 md:grid-cols-12 gap-8"
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-12",
+      "section_gap": "gap-12 md:gap-24",
+      "element_gap": "gap-4"
+    },
+    "containers": {
+      "card": "bg-white border border-stone-200 rounded-xl p-6 hover:border-orange-200 transition-colors duration-300",
+      "main_wrapper": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-orange-600 text-white hover:bg-orange-700 rounded-full px-8 py-3 font-medium transition-transform active:scale-95 shadow-sm hover:shadow-md",
+      "secondary": "bg-white text-stone-900 border border-stone-200 hover:bg-stone-50 rounded-full px-8 py-3 font-medium transition-colors",
+      "ghost": "text-stone-600 hover:text-orange-600 hover:bg-orange-50 rounded-full px-4 py-2 transition-colors"
+    },
+    "inputs": {
+      "style": "bg-white border-stone-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-100 rounded-lg h-12 px-4 transition-all",
+      "label": "text-sm font-medium text-stone-700 mb-1.5 block"
+    },
+    "cards": {
+      "dashboard_widget": "bg-white border border-stone-100 shadow-sm rounded-2xl p-6 flex flex-col justify-between h-full hover:shadow-md transition-shadow",
+      "job_card": "group relative bg-white border border-stone-200 rounded-xl p-5 hover:border-orange-500/50 transition-all cursor-pointer"
+    },
+    "navigation": {
+      "sidebar": "bg-stone-50/80 backdrop-blur-xl border-r border-stone-200 w-64 hidden md:flex flex-col h-screen sticky top-0",
+      "header": "bg-white/80 backdrop-blur-md border-b border-stone-100 sticky top-0 z-50"
+    }
+  },
+  "visual_enhancers": {
+    "texture": "Add a subtle noise texture overlay to the body background (opacity 0.03) to reduce digital flatness.",
+    "shadows": "Use 'soft-shadow' strategy: shadow-[0_8px_30px_rgb(0,0,0,0.04)] for floating elements.",
+    "borders": "1px solid borders are preferred over shadows for separation. Use 'border-stone-200'.",
+    "glassmorphism": "Use 'backdrop-blur-xl bg-white/70' for sticky headers and modals."
+  },
+  "motion": {
+    "transitions": "transition-all duration-300 ease-out",
+    "hover_effects": "hover:-translate-y-1 hover:shadow-lg",
+    "loading": "Use a custom 'pulse' effect on skeleton loaders. Do not use standard spinners if possible.",
+    "page_transition": "Fade in + Slide up (10px) on mount."
+  },
+  "media": {
+    "image_urls": {
+      "hero_workspace": "https://images.unsplash.com/photo-1511385348-a52b4a160dc2?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "social_proof_team": "https://images.unsplash.com/photo-1758518731468-98e90ffd7430?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "abstract_office": "https://images.unsplash.com/photo-1641060190896-ae3bd63536d5?crop=entropy&cs=srgb&fm=jpg&q=85"
+    },
+    "icons": "Use 'lucide-react' for all UI icons. Stroke width: 1.5px (thin and elegant)."
+  },
+  "accessibility": {
+    "contrast": "Ensure all text meets WCAG AA. Use 'text-stone-900' on light backgrounds.",
+    "focus_states": "Visible focus rings are mandatory. Use 'ring-2 ring-orange-500 ring-offset-2'.",
+    "semantic_html": "Use <main>, <nav>, <aside>, <header>, <footer> correctly."
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS: Add 'Outfit' and 'Plus Jakarta Sans' via Google Fonts in index.html or CSS.",
+    "2. SETUP TAILWIND: Update tailwind.config.js to include the 'stone' and 'orange' colors as 'background' and 'primary'.",
+    "3. CREATE LAYOUT: Build a 'DashboardLayout' component with the Sidebar and Header defined in the guidelines.",
+    "4. BUILD COMPONENTS: Create reusable 'Button', 'Input', 'Card' components in /components/ui that match the design specs.",
+    "5. APPLY TEXTURE: Add the noise texture to the global body CSS.",
+    "6. USE IMAGES: Use the provided Unsplash URLs for the Landing Page and Dashboard placeholders.",
+    "7. DATA-TESTID: Add data-testid to all interactive elements (buttons, inputs, links)."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not use generic centered layouts.",
+    "Create depth through layered design elements.",
+    "Use glass-morphism effects with backdrop filters.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures and noise overlays are mandatory.",
+    "Use 'sonner' for toasts."
+  ]
+}

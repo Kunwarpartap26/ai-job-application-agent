@@ -1,0 +1,105 @@
+{
+  "summary": {
+    "tests_passed": 13,
+    "tests_total": 16,
+    "success_rate": 81.25
+  },
+  "results": [
+    {
+      "test": "API Root",
+      "success": true,
+      "details": "Status: 200, Response keys: ['message']",
+      "timestamp": "2026-01-20T15:17:56.776923"
+    },
+    {
+      "test": "Health Check",
+      "success": true,
+      "details": "Status: 200, Response keys: ['status']",
+      "timestamp": "2026-01-20T15:17:56.812670"
+    },
+    {
+      "test": "User Registration",
+      "success": true,
+      "details": "Status: 200, Response keys: ['token', 'user']",
+      "timestamp": "2026-01-20T15:17:57.116031"
+    },
+    {
+      "test": "Token Extraction",
+      "success": true,
+      "details": "User ID: 58fd52b0-fe21-4070-9fe3-49254605591e",
+      "timestamp": "2026-01-20T15:17:57.116672"
+    },
+    {
+      "test": "User Login",
+      "success": true,
+      "details": "Status: 200, Response keys: ['token', 'user']",
+      "timestamp": "2026-01-20T15:17:57.378714"
+    },
+    {
+      "test": "Get Profile",
+      "success": true,
+      "details": "Status: 200, Response keys: ['user_id', 'name', 'email', 'phone', 'location', 'education', 'skills', 'projects', 'experience', 'preferred_roles', 'summary', 'updated_at']",
+      "timestamp": "2026-01-20T15:17:57.430886"
+    },
+    {
+      "test": "Update Profile",
+      "success": true,
+      "details": "Status: 200, Response keys: ['message', 'profile']",
+      "timestamp": "2026-01-20T15:17:57.474079"
+    },
+    {
+      "test": "Job Search - All Jobs",
+      "success": true,
+      "details": "Status: 200, Response keys: ['jobs']",
+      "timestamp": "2026-01-20T15:17:57.508907"
+    },
+    {
+      "test": "Job Data Validation",
+      "success": true,
+      "details": "Found 6 jobs",
+      "timestamp": "2026-01-20T15:17:57.509545"
+    },
+    {
+      "test": "Job Fields Validation",
+      "success": true,
+      "details": "All required fields present",
+      "timestamp": "2026-01-20T15:17:57.509569"
+    },
+    {
+      "test": "Generate Resume",
+      "success": false,
+      "details": "Status: 520, Raw response: Internal Server Error",
+      "timestamp": "2026-01-20T15:18:02.651534"
+    },
+    {
+      "test": "Apply to Job",
+      "success": false,
+      "details": "Status: 404, Error: Job not found",
+      "timestamp": "2026-01-20T15:18:02.706103"
+    },
+    {
+      "test": "Get Applications",
+      "success": true,
+      "details": "Status: 200, Response keys: ['applications']",
+      "timestamp": "2026-01-20T15:18:02.741699"
+    },
+    {
+      "test": "Applications Data",
+      "success": false,
+      "details": "Found 0 applications",
+      "timestamp": "2026-01-20T15:18:02.742421"
+    },
+    {
+      "test": "Get Resumes",
+      "success": true,
+      "details": "Status: 200, Response keys: ['resumes']",
+      "timestamp": "2026-01-20T15:18:02.778284"
+    },
+    {
+      "test": "Resumes Data",
+      "success": true,
+      "details": "Found 1 resumes",
+      "timestamp": "2026-01-20T15:18:02.779026"
+    }
+  ]
+}
