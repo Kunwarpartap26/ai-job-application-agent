@@ -103,8 +103,8 @@ autoapply-ai-agent/
 ├── design_guidelines.json
 └── README.md
 
-⚙️ Setup Instructions
-✅ Prerequisites
+ Setup Instructions
+ Prerequisites
 
 Node.js 18+
 
@@ -114,7 +114,7 @@ pip / virtualenv
 
 Yarn or npm
 
-▶️ Backend Setup
+ Backend Setup
 cd backend
 pip install -r requirements.txt
 python main.py
@@ -124,7 +124,7 @@ Backend runs at:
 
 http://localhost:8000
 
-▶️ Frontend Setup
+Frontend Setup
 cd frontend
 yarn install
 yarn dev
@@ -134,32 +134,32 @@ Frontend runs at:
 
 http://localhost:5173
 
-🔐 Environment Variables
+Environment Variables
 
 Create .env inside backend/:
 
 LLM_API_KEY=your_universal_llm_api_key
 
 
-❗ Do NOT commit .env to GitHub.
+ Do NOT commit .env to GitHub.
 
-🧪 Running Tests
+ Running Tests
 cd tests
 pytest
 
 
 Test results are saved in:
 
-test_reports/
+test_reports this is a private folder 
 
-⚠️ Disclaimer
+ Disclaimer
 
 This project simulates job applications for educational and research purposes only.
 
 Automated applications on platforms like LinkedIn or Indeed may violate their terms of service.
 For real-world usage, official APIs or user-authorized browser automation should be used.
 
-🌟 Future Enhancements
+Future Enhancements
 
 Chrome extension for real auto-apply
 
